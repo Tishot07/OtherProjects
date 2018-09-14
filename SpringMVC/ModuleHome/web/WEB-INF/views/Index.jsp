@@ -13,10 +13,13 @@
 
 <spring:form method="post"  modelAttribute="userJSP" action="check-user">
 	<fieldset class="boxBody">
+
 		<spring:label path="user">Username</spring:label>
 			<spring:input path="user" />
+		<spring:errors path="user" cssClass="error" />
 		<spring:label path="pwd">Password</spring:label>
 			<spring:input path="pwd" />
+		<spring:errors path="pwd" cssClass="error" />
 	</fieldset>
 	<footer>
 		<label><input type="checkbox" tabindex="3">Keep me logged in</label>
